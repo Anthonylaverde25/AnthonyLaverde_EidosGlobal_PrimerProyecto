@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    scroll-behavior: smooth;
+
+}
+
+/** Estilos en Comun */
+
+:root {
+    --backgraound-general: #fbfbfb;
+    --backgraound-boton-footer: #af599e;
+    --backgraound-hablemos: rgba(175, 89, 158, 0.3);
+    --texto: #0f0f0f;
+    --texto-button-footer: #fbfbfb;
+    --titulo-principal: 36px;
+    --titulos-secundarios: 28px;
+
+
+
+
+}
+
+/** Globales */
+
+section {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+body {
+    background-color: var(--backgraound-general);
+}
+
+h1 {
+    font-size: var(--titulo-principal);
+}
+
+h2 {
+    font-size: var(--titulos-secundarios);
+    margin: 1rem;
+
+}
+
+.alinear {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 25px;
+}
+
+
+
+
+
+
+
+/** Escritrio */
+
+@media (min-width: 768px) {
+
+
+    header {
+        height: 6 rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fbfbfb;
+        border-bottom: 2px solid #ddd;
+        box-shadow: 0px 2px 5px #ddd;
+
+
+    }
+
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .contenedorInicio {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #242424;
+
+
+    }
+
+    .logo {
+        padding: 1rem;
+        color: var(--backgraound-boton-footer);
+
+
+    }
+
+
+
+    .item {
+        margin: 10px;
+    }
+
+
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-weight:800;
+    }
+
+    .nav a {
+        text-decoration: none;
+        padding: 10px;
+        color: var(--texto);
+
+    }
+
+
+    /** MAIN */
+    .sobreMi {
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+
+    .imagenPerfil {
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+    }
+
+    .descripcion {
+        margin-bottom: 3rem;
+        text-align: center;
+
+    }
+
+    .boton {
+        background-color: var(--backgraound-boton-footer);
+        border-radius: 10px 10px 10px 10px;
+        margin-top: 2 rem;
+        padding: 10px;
+
+    }
+
+    .boton_CV {
+        text-decoration: none;
+        padding: 1.5rem;
+        text-transform: uppercase;
+        color: var(--texto-button-footer)
+    }
+
+    .hablemos {
+        background-color: var(--backgraound-hablemos);
+        color: var(--texto);
+        text-align: center;
+        border-radius: 5px;
+        padding: 2rem;
+    }
+
+    .contacto {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 3rem;
+        padding: 1rem;
+    }
+
+    .contacto .imagen_contacto {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 2rem;
+    }
+
+    .contacto i {
+        font-size: 3rem;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: var(--backgraound-boton-footer);
+        color: var(--texto-button-footer);
+        width: auto;
+    }
+}
+
+/** Movil */
+
+
+@media(max-width:767px) {
+    h2 {
+        margin: 1rem;
+    }
+
+    section {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    body {
+        background-color: #fbfbfb;
+    }
+
+    header {
+        height: 6 rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fbfbfb;
+        border-bottom: 2px solid #ddd;
+        box-shadow: 0px 2px 5px #ddd;
+
+    }
+
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .contenedorInicio {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #242424;
+
+
+    }
+
+    .logo {
+        padding: 1rem;
+        color: var(--backgraound-boton-footer);
+    }
+
+    .logo h1 {
+        font-size: 36px;
+    }
+
+    .item {
+        margin: 10px;
+    }
+
+
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-weight: 700;
+
+
+    }
+
+    .nav a {
+        text-decoration: none;
+        padding: 10px;
+        color: rgb(40, 39, 39);
+
+    }
+
+
+    /** MAIN */
+    .sobreMi {
+        margin-top: 11rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .sobreMi h2 {
+        margin: 1rem;
+    }
+
+    .imagenPerfil {
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+    }
+
+    .descripcion {
+        margin-bottom: 3rem;
+        text-align: center;
+
+    }
+
+    .boton {
+        background-color: #af599e;
+        border-radius: 10px 10px 10px 10px;
+        margin-top: 2 rem;
+        padding: 10px;
+
+    }
+
+    .boton_CV {
+        text-decoration: none;
+        padding: 1.5rem;
+        text-transform: uppercase;
+        color: #fbfbfb;
+
+    }
+
+    .hablemos {
+        background-color: rgba(175, 89, 158, 0.3);
+        text-align: center;
+        border-radius: 5px;
+        padding: 2rem;
+    }
+
+    .contacto {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 3rem;
+        padding: 1rem;
+    }
+
+    .contacto .imagen_contacto {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 2rem;
+    }
+
+    .contacto i {
+        font-size: 3rem;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #af599e;
+        color: #fbfbfb;
+        width: auto;
+    }
+
+
+}
+
+/* Modal de Contacto */
+
+#modalCorreo {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modalCorreo:target {
+    display: block;
+
+
+
+}
+
+.modal-contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    
+
+
+
+
+    
+
+}
+
+.modal-contenido a {
+    display: block;
+    text-align: center;
+    margin: 1rem;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #af599e;
+    border: none;
+    border-radius: 6px;
+    
+}
+
+
+
+/* Formulario de Contacto */
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+.formularioGroup{
+    position: relative;
+    margin: 20px;
+}
+
+
+.formImput{
+    padding: .5rem;
+    border: none;
+    border-bottom: 1px solid var(--backgraound-boton-footer);
+    outline: none;
+    background-color: whitesmoke;
+}
+
+
+.formImput:focus + .formLabel,
+.formImput:not(:placeholder-shown)+ .formLabel{
+    transform: translateY(-12px) scale(.7);
+    color: var(--backgraound-boton-footer);
+}
+
+
+.formLabel{
+  position: absolute;
+  top: -10 px;
+  left: 0px;
+  transform: translateY(10px);
+  transition: transform .5s , color .3s;
+  z-index: 1;
+
+  
+}
+
+
+.formInput:focus + .formLabel {
+    transform: translateY(-20px) scale(0.8);
+    z-index: 2;
+}
+
+
+.textarea{
+    resize: none;
+    height: auto;
+    overflow-y: auto;
+    max-height: 200px ;
+
+}
+
+.botones{
+    background-color: rebeccapurple;
+    width: 50%;
+}
+
+
