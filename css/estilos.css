@@ -371,6 +371,7 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color:whitesmoke;
+    width: 400px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
@@ -417,7 +418,8 @@ h2 {
 
 
 .formImput{
-    padding: .5rem;
+    width: 100%;
+    padding: 1rem;
     border: none;
     border-bottom: 1px solid var(--backgraound-boton-footer);
     outline: none;
@@ -451,11 +453,17 @@ h2 {
 
 
 .textarea{
+    width: 100%;
     resize: none;
-    height: auto;
-    overflow-y: auto;
-    max-height: 200px ;
+    background-color: whitesmoke;
+    border: none;
+    text-transform: uppercase;
+    padding: 1rem;
 
+}
+
+.textarea:focus{
+    outline-style: none;
 }
 
 .botones{
@@ -464,3 +472,8 @@ h2 {
 }
 
 
+
+
+.contenedorFormulario{
+    width: 100%;
+}
