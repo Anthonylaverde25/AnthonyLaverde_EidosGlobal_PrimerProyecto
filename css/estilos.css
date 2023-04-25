@@ -19,20 +19,34 @@
     --titulo-principal: 36px;
     --titulos-secundarios: 28px;
 
-
-
-
 }
 
-/** Globales */
+/** GLOBALES */
 
-section {
-    margin-left: 15px;
-    margin-right: 15px;
+
+header {
+    height: 6 rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--backgraound-general);
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0px 2px 5px #ddd;
+
 }
 
 body {
     background-color: var(--backgraound-general);
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 h1 {
@@ -44,6 +58,8 @@ h2 {
     margin: 1rem;
 
 }
+
+
 
 .alinear {
     text-align: center;
@@ -57,27 +73,16 @@ h2 {
 
 
 
-/** Escritrio */
+/** ESCRITORIO */
 
 @media (min-width: 768px) {
 
 
-    header {
-        height: 6 rem;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: #fbfbfb;
-        border-bottom: 2px solid #ddd;
-        box-shadow: 0px 2px 5px #ddd;
+   
 
-
-    }
-
-    main {
-        max-width: 1200px;
-        margin: auto;
-    }
+   
+    /* Header */
+   
 
     .contenedorInicio {
         display: flex;
@@ -119,7 +124,8 @@ h2 {
     }
 
 
-    /** MAIN */
+    /** Main */
+
     .sobreMi {
         margin-top: 10rem;
         display: flex;
@@ -191,7 +197,7 @@ h2 {
     }
 }
 
-/** Movil */
+/** MOVIL */
 
 
 @media(max-width:767px) {
@@ -219,10 +225,7 @@ h2 {
 
     }
 
-    main {
-        max-width: 1200px;
-        margin: auto;
-    }
+    
 
     .contenedorInicio {
         display: flex;
