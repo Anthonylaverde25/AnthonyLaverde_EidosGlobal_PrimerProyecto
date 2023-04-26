@@ -477,3 +477,13 @@ h2 {
 .contenedorFormulario{
     width: 100%;
 }
+
+@media (max-width: 360px) {
+    header{
+        background-color: red;
+    }
+
+    header .item{
+        margin: 5px;
+    }
+}
